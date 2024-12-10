@@ -1,0 +1,19 @@
+{
+  "hash": "496c75c5b13271e0d3719fc17967dd48",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Combining Height Datesets from the 1700s to 1900s\"\nauthor: \"Your Name here\"\n\neditor: visual\nexecute:\n  keep-md: true\n\ndate: \"December 09, 2024\"\nwarnings: false\nformat:\n  html:\n    df-print: paged\n    code-fold: true\n    code-line-numbers: true\n---\n\n::: {.cell}\n\n```{.r .cell-code}\nif (!require(\"pacman\")) install.packages(\"pacman\")\npacman::p_load(tidyverse, haven, foreign, ggpubr)\n\n# leaving this here because I know it will cause problems\n# the zip file, you just need to run the unzip line of code once the comment out\n# when referring to the datasets, either use the current df name or edit accordingly\ngermancon <- read_dta(\"data/germanconscr.dta\")\nprison <- read_dta(\"data/germanprison.dta\")\n# unzip(\"data/Heights_south-east.zip\", exdir = \"data/Heights_south-east\")\ng18 <- read.dbf(\"data/Heights_south-east/B6090.DBF\")\nmain <- read_sav(\"data/main05022005.sav\")\nBLS <- read_csv(\"https://raw.githubusercontent.com/hadley/r4ds/main/data/heights.csv\")\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../../site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"../../site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

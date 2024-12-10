@@ -1,0 +1,19 @@
+{
+  "hash": "6eccdb43408e5108e9873cf64f3a52f2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Task/project name here\"\n\neditor: visual\nexecute:\n  keep-md: true\n#  freeze: true alternative way to only render this doc and not all \n# maybe the gh-pages setting cause all to render and docs dont? more testing\n\ndate: \"December 09, 2024\"\nwarnings: false\nformat:\n  html:\n    df-print: paged\n    code-fold: true\n    code-line-numbers: true\n---\n\n\n\n\n## Dow-Jones Industrial Average Returns\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Libraries\nif (!require(\"pacman\")) install.packages(\"pacman\")\npacman::p_load(reader, ggplot2)\n```\n:::\n\n\n\n\ntesting freeze: auto\n\ngoal is to shorten reder website times by only rendering updated files.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../../site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"../../site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

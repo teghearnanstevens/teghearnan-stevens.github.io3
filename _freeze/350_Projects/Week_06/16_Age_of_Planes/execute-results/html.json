@@ -1,0 +1,19 @@
+{
+  "hash": "7ef1ad2f184c8786c004603a1e330c4b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"16  Age of Planes\"\nauthor: \"your-name-here\"\n\neditor: visual\nexecute:\n  keep-md: true\n\ndate: \"December 09, 2024\"\nwarnings: false\nformat:\n  html:\n    df-print: paged\n    code-fold: true\n    code-line-numbers: true\n---\n\n::: {.cell}\n\n```{.r .cell-code}\nif (!require(\"pacman\")) install.packages(\"pacman\")\npacman::p_load(nycflights13)\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../../site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"../../site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
